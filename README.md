@@ -17,4 +17,4 @@ document.querySelector('.hamburger-menu').addEventListener('click', () => {
   document.querySelector('.nav-wrapper').classList.toggle('change');
 });
 
-.hamburger-menu and .nav-wrapper is what document.querySelector is looking for, and when they're called on it creates a animation that changes the menu known as the hamburger menu. 
+.hamburger-menu and .nav-wrapper is what document.querySelector is looking for, and when they're called on it creates a animation that changes the menu in the second line to add interactivity to the page. The menu is known as the hamburger-menu. 
