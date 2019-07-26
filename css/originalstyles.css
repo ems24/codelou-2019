@@ -99,15 +99,30 @@ h1 {
 /* Creates the image grid 8x8 */
 .image-gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 5vw);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
 }
 
-/* Styles images */
+/* Styles all of images */
 .images {
-    width: 98%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Styles first image */
+.image-1 {
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    grid-row-start: 1; 
+    grid-row-end: 7;
+}
+
+.image-2 {
+    grid-column-start: 3; 
+    grid-column-end: 5; 
+    grid-row-start: 1; 
+    grid-row-end: 7;
 }
 
 .image-3 {
@@ -117,11 +132,27 @@ h1 {
     grid-row-end: 7;
 }
 
+
 .image-4 {
     grid-column-start: 7; 
     grid-column-end: 9; 
     grid-row-start: 1; 
     grid-row-end: 7;
+}
+
+/* start second row */
+.image-5 {
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    grid-row-start: 7; 
+    grid-row-end: 12;
+}
+
+.image-6 {
+    grid-column-start: 3; 
+    grid-column-end: 5; 
+    grid-row-start: 7; 
+    grid-row-end: 12;
 }
 
 .image-7 {
@@ -141,6 +172,15 @@ h1 {
 /* Media Queries
 ==================================== */
 
+/* @media(max-width: 800px) {
+    
+.images {
+    width: 100%;
+    height: 100%;
+    }
+} */
+
+
 /* Hamburger Menu Icon */
  
 @media(max-width: 1200px) {
@@ -155,7 +195,6 @@ h1 {
  
 .nav-link {
     font-size: 25px;
-    padding-right: 30px;
     }
 }
  
@@ -170,7 +209,6 @@ h1 {
     width: 70%;
     flex-wrap: wrap;
     align-content: center;
-    padding-right: 30px;
 }
  
 .nav-link {
@@ -187,8 +225,12 @@ h1 {
  
 .nav-list {
     width: 50%;
-    padding-right: 30px;
     }
 }
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
 
 
